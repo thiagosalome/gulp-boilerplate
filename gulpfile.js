@@ -12,6 +12,7 @@ var filesass = "src/assets/sass/*.scss";
 var filescript = "src/assets/js/*.js";
 var filepug = "src/assets/views/*.pug";
 
+
 gulp.task("server", () => {
     gulp.src("./")
         .pipe(server({
@@ -21,19 +22,25 @@ gulp.task("server", () => {
         }));
 });
 
+
 gulp.task("sass", () => {
     gulp.src(filesass)
-    .pipe(sass())
-    .pipe(autoprefixer())
-    .pipe(minifycss())
-    .pipe(gulp.dest("dist/assets/css"));
+        .pipe(sass())
+        .pipe(autoprefixer())
+        .pipe(minifycss())
+        .pipe(gulp.dest("dist/assets/css"));
 });
 
 gulp.task("script", () => {
     gulp.src(filescript)
-        .pipe(babel())
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(concat("app.js"))
         .pipe(uglify())
+        .on('error', function (err) { 
+            console.log(err);
+        })
         .pipe(gulp.dest("dist/assets/js/"));
 });
 
@@ -44,7 +51,7 @@ gulp.task("pug", () => {
 });
 
 gulp.task('default', () => {
-    // gulp.run("server");
+    gulp.run("server");
     // Sass
     gulp.watch(filesass, () => {
         gulp.run("sass");

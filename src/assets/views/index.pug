@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 html(lang="pt-br")
     head
+        //- meta tags
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(rel="stylesheet", href="../sass/app.scss")
+        //- link css
+        link(rel="stylesheet", href="./assets/css/app.css")
+        //- link fontawesome
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Lato", rel="stylesheet")
+        //- site title
         title Otimização de Sistemas
     body
+        header(class="header")
+            h1(class="header-logo")
+                i(class="fas fa-circle-notch")
         main
-            p teste
+            section.params
+                .container
+                    .params-field
+                        label(for="") Função Objetiva
+                        input(type="text")
+

@@ -1,1 +1,1 @@
-body{background-color:#ccc;display:flex;border-radius:5px;-webkit-transform:scale(1.5);transform:scale(1.5)}
+*{margin:0;padding:0;box-sizing:border-box}.container{max-width:1200px;margin:0 auto;padding:0 20px}.header{height:50px;width:100%;background-image:linear-gradient(to right,#0ea4be,#08859b)}.header-logo{text-align:center}.params-field{margin:20px 0;position:relative}.params-field label{position:absolute;top:0;z-index:-1}.params-field input{width:400px;border:none;border-bottom:1px solid #ccc;background-color:transparent}
