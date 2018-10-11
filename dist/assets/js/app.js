@@ -1,1 +1,0 @@
-"use strict";function _classCallCheck(t,n){if(!(t instanceof n))throw new TypeError("Cannot call a class as a function")}var Retangulo=function t(n,e){return _classCallCheck(this,t),n*e},out=document.querySelector(".button");out.addEventListener("click",function(){console.log("Hello Test as")});

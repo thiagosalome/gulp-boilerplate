@@ -1,0 +1,18 @@
+assets
+  css - Todos os arquivos css do site
+    sass
+      objects - Objetos e elementos padrões do site (Bloco de Artigo, Botão, etc)
+      partials - Partes padrões do site (Header, Footer)
+      plugins - Todos os css de plugins que eu estiver utilizando (Bootstrap, etc)
+      sections - Seções do site que necessitam ser estilizadas individualmente
+      typography - Todas as linkagens de fontes do site
+      variables - Variáveis que irão se repetir (Cores)
+      mixins - Blocos de css que podem ser reutilizados (Titulos)
+  fonts - Todas as fontes utilizadas no site
+  images - Todas as imagens do site
+  js - Todos os arquivos javascript do site
+    plugins - Todos os scripts de plugins que eu estivez utilizando (Owl Carousel, jQuery Mask, etc)
+    project - Todos os scripts que serão criados pelo desenvolvedor do site
+    requireds - Scripts necessários para o funcionamentos dos plugins e do projetos (jQuery)
+  svgs - Todos os svgs do site
+  videos - Todos os videos do site
